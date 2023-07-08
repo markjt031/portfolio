@@ -1,8 +1,9 @@
 import React from 'react'
-import data from "../data"
+import {projects} from "../data"
+import ProjectCarousel from '../components/ProjectCarousel'
 
 const Projects = () => {
-  console.log(data)
+  console.log(projects)
   return (
     <div>Projects</div>
   )

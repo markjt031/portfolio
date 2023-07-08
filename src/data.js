@@ -1,4 +1,4 @@
-module.exports=[
+export const projects=[
     {
         title: "Connect 4",
         technologiesIcons: [
@@ -9,13 +9,15 @@ module.exports=[
         ],
         technologies: ["html", "javascript", "css"],
         images: [
-            "connect-4-select-mode.png",
-            "connect-4-difficulty.png",
-            "connect-4-color.png",
-            "connect-4-game.png",
-            "connect-4-win.png"
+            "/connect-4-select-mode.png",
+            "/connect-4-difficulty.png",
+            "/connect-4-color.png",
+            "/connect-4-game.png",
+            "/connect-4-win.png"
         ],
-        description: "Modeled after the board game Connect Four, this application allows you to play single player versus the computer or multiplayer with two players trading turns on the same screen. Features easy, medium and hard difficulties for single player and color selection for both modes"
+        description: "Modeled after the board game Connect Four, this application allows you to play single player versus the computer or multiplayer with two players trading turns on the same screen. Features easy, medium and hard difficulties for single player and color selection for both modes. Built using vanilla Javascript, HTML and CSS.",
+        githubURL: "",
+        deployedURL: ""
     },
     {
         title: "Crochet Project Manager",
@@ -29,12 +31,14 @@ module.exports=[
         ],
         technologies: ["html", "javascript", "express.js", "mongoDB","css", "node.js"],
         images: [
-            "crochet-1",
-            "crochet-2",
-            "crochet-3",
-            "crochet-4"
+            "/crochet-1.png",
+            "/crochet-2.png",
+            "/crochet-3.png",
+            "/crochet-4.png"
         ],
-        description: ""
+        description: "",
+        githubURL: "",
+        deployedURL: ""
     },
     {
         title: "REEL Happy",
@@ -50,11 +54,13 @@ module.exports=[
         ],
         technologies: ["html", "javascript", "express.js", "mongoDB","react.js","css", "node.js"],
         images: [
-            "happy-comments-2.png",
-            "happy-comments-3.png",
-            "happy-movies.png"
+            "/happy-comments-2.png",
+            "/happy-comments-3.png",
+            "/happy-movies.png"
         ],
-        description: ""
+        description: "",
+        githubURL: "",
+        deployedURL: ""
     },
     {
         title: "Hyrule Archives",
@@ -69,11 +75,13 @@ module.exports=[
         ],
         technologies: ["html", "javascript", "express.js", "mongoDB","next.js","css", "node.js"],
         images: [
-            "zelda-1.png",
-            "zelda-2.png",
-            "zelda-3.png",
-            "zelda-login.png"
+            "/zelda-1.png",
+            "/zelda-2.png",
+            "/zelda-3.png",
+            "/zelda-login.png"
         ],
-        description: ""
+        description: "",
+        githubURL: "",
+        deployedURL: ""
     }
 ]

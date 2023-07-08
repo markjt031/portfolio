@@ -6,7 +6,7 @@ import Contact from '../pages/Contact'
 import Project from '../pages/Project'
 import Projects from '../pages/Projects'
 
-const Main = () => {
+const Main = ({data}) => {
   return (
     <main>
         <Routes>
@@ -14,7 +14,7 @@ const Main = () => {
             <Route path="/about" element={<About/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/projects" element={<Projects/>}/>
-            <Route pahth="/projects/:id" element={<Project/>}/>
+            <Route path="/projects/:id" element={<Project/>}/>
         </Routes>
     </main>
   )
