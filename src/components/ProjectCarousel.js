@@ -24,8 +24,9 @@ const ProjectCarousel = ({data}) => {
         <div id='carousel' class="scroll-smooth mt-4 flex w-[320px] min-h-[200px] md:w-[500px] gap-4 pb-5 snap-x overflow-x-auto mx-auto">
           {data.data.images.map((image, i)=>{
             return <div className="min-w-[100%]"key={i}>
-              <img src={image}/>
-              <div class="object-contain h-full w-full snap-center rounded-md bg-center shadow-md shadow-black/20 "></div>
+              <div class="object-contain h-full w-full snap-center rounded-md bg-center shadow-md shadow-black/20 ">
+                <img src={image}/>
+              </div>
             </div>
           })}
         </div>
