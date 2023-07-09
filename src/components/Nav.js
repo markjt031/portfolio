@@ -35,35 +35,29 @@ const Nav = () => {
                 <div className="hidden group-open:block bg-gradient-to-r from-slate-800 via-green-800 to-slate-800">
                   {projects.map((project)=>{
                     return <div className="text-center p-4 relative text-slate-100 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out">
-                      <Link to={`/projects/${project.title}`} state={({data: project})}>{project.title}</Link>
+                      <Link to={`/projects/${project.title}`} state={({data: project})} onClick={()=>{setIsMenuOpen(!isMenuOpen)}}>{project.title}</Link>
                     </div>
                   })}
                 </div>
             </div>
           </div>
       </div>
-      <div class="flex-1 md:flex hidden items-center justify-end">
-          <div class="menu-item">
-            <span>Home</span>
+      <div className="flex-1 md:flex hidden items-center justify-end">
+          <div className="menu-item">
+          <span onClick={()=>{setIsMenuOpen(!isMenuOpen)}}><Link to="/">Home</Link></span>
           </div>
-          <div class="menu-item">
-            <span>About</span>
+          <div className="menu-item">
+          <span onClick={()=>{setIsMenuOpen(!isMenuOpen)}}><Link to="/about">About</Link></span>
           </div>
-          <div class="menu-item group">
+          <div className="menu-item group">
             <span>Projects</span>
-            <div class="group-hover:block absolute hidden bg-gradient-to-r from-green-900 to-slate-900 top-full right-0 whitespace-nowrap rounded-b-md text-right">
-              <div  class="p-4 font-bold hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer text-slate-100">
-                <span>Connect 4</span>
-              </div>
-              <div class="p-4 font-bold hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer text-slate-100">
-                <span>Hyrule Archives</span>
-              </div>
-              <div class="p-4 font-bold hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer text-slate-100">
-                <span>REEL-Happy</span>
-              </div>
-              <div class="p-4 font-bold hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer text-slate-100">
-                <span>Crochet Project Manager</span>
-              </div>
+            <div className="group-hover:block absolute hidden bg-gradient-to-r from-green-900 to-slate-900 top-full right-0 whitespace-nowrap rounded-b-md text-right">
+            {projects.map((project)=>{
+                    return <div className="p-4 font-bold hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer text-slate-100">
+                      <Link to={`/projects/${project.title}`} state={({data: project})}>{project.title}</Link>
+                    </div>
+                  })}
+             
             </div>
           </div>
         </div>
