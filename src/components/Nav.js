@@ -40,6 +40,9 @@ const Nav = () => {
                   })}
                 </div>
             </div>
+            <div className="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-slate-100 hover:text-zinc-200 transition-colors hover:bg-white/10">
+              <span onClick={()=>{setIsMenuOpen(!isMenuOpen)}}><Link to="/contact">Contact</Link></span>
+            </div>
           </div>
       </div>
       <div className="flex-1 md:flex hidden items-center justify-end">
@@ -60,6 +63,9 @@ const Nav = () => {
              
             </div>
           </div>
+          <div className="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-slate-100 hover:text-zinc-200 transition-colors hover:bg-white/10">
+              <span onClick={()=>{setIsMenuOpen(!isMenuOpen)}}><Link to="/contact">Contact</Link></span>
+            </div>
         </div>
     </nav>
   )
