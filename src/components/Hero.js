@@ -7,12 +7,13 @@ const Hero = () => {
         <div 
           style={{backgroundImage: "url('download.jpeg')"}}
           className="rounded-full animate-slideLeft w-[140px] bg-center bg-cover h-[140px] md:w-[200px] md:h-[200px] drop-shadow-lg bg-white/60"></div>
-        <div className="animate-slideRight rounded-l-lg rounded-t-xl drop-shadow-lg bg-white/60 h-20 right-2 md:h-40 md:w-80 p-2 md:p-10">
+        <div className="animate-slideRight rounded-l-lg rounded-t-xl drop-shadow-lg bg-white/60 h-30 right-2 md:h-30 md:w-70 p-2 md:p-3">
           <h2 className="text-l md:text-2xl text-slate-800">
             Hi, I'm Jessica Marks. 
           </h2>
-          <p className="text-slate-400">
-            Insert tagline here.
+          <p className="text-slate-400 w-[200px]">
+            Software developer, creative problem solver
+            and lifelong learner.
           </p>
         </div>
       </div>
