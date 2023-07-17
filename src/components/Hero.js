@@ -17,8 +17,8 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex justify-center items-end mt-[100px]">
-        <a href="https://github.com/markjt031" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50" className="block -mt-40" /></a>
-        <a href="https://www.linkedin.com/in/jessicamarks031/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="50" className="block -mt-40"/></a>  
+        <a href="https://github.com/markjt031" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50" className="block -mt-40" alt="github logo" /></a>
+        <a href="https://www.linkedin.com/in/jessicamarks031/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="50" className="block -mt-40" alt="linkedIn logo"/></a>  
       </div>
     </div>
   )

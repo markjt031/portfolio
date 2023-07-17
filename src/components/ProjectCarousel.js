@@ -25,7 +25,7 @@ const ProjectCarousel = ({data}) => {
           {data.data.images.map((image, i)=>{
             return <div className="min-w-[100%]"key={i}>
               <div class="object-contain h-full w-full snap-center rounded-md bg-center shadow-md shadow-black/20 ">
-                <img src={image}/>
+                <img src={image} alt={data.data.title}/>
               </div>
             </div>
           })}

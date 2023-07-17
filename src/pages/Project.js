@@ -11,8 +11,8 @@ const Project = () => {
       <h1 className="text-5xl text-center mt-6">{state.data.title}</h1>
       <ProjectCarousel data={state}>Project</ProjectCarousel>
       <div className="flex w-[320px] md:w-[500px] my-4 mx-auto justify-center gap-4">
-        <a className="hover:text-slate-900 hover:bg-white/30 border rounded-xl border-stone-400 p-2" target="_blank" href={state.data.githubURL}>Github</a>
-        <a className="hover:text-slate-900 hover:bg-white/30 border rounded-xl border-stone-400 p-2" target="_blank" href={state.data.deployedURL}>Deployment</a>
+        <a className="hover:text-slate-900 hover:bg-white/30 border rounded-xl border-stone-400 p-2" target="_blank" rel="noreferrer" href={state.data.githubURL}>Github</a>
+        <a className="hover:text-slate-900 hover:bg-white/30 border rounded-xl border-stone-400 p-2" target="_blank" rel="noreferrer" href={state.data.deployedURL}>Deployment</a>
       </div>
       <div className="my-8 mx-auto w-[320px] md:w-[500px] bg-white/60 p-4">
         <h1 className="text-2xl">Technologies Used:</h1>
