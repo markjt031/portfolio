@@ -14,7 +14,7 @@ const Project = () => {
         <a className="hover:text-slate-900 hover:bg-white/30 border rounded-xl border-stone-400 p-2" target="_blank" rel="noreferrer" href={state.data.githubURL}>Github</a>
         <a className="hover:text-slate-900 hover:bg-white/30 border rounded-xl border-stone-400 p-2" target="_blank" rel="noreferrer" href={state.data.deployedURL}>Deployment</a>
       </div>
-      <div className="my-8 mx-auto w-[320px] md:w-[500px] bg-white/60 p-4">
+      <div className="my-8 mx-auto w-[320px] md:w-[600px] lg:w-[800px] bg-white/60 p-4">
         <h1 className="text-2xl">Technologies Used:</h1>
         <div className="flex my-6">
         {state.data.technologiesIcons.map((icon)=>{
