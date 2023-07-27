@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom'
 
 const Project = () => {
   let {state}=useLocation()
-  console.log(state)
+  
   return (
     <>
     <div className=" bg-stone-200 text-slate-800 p-4">
