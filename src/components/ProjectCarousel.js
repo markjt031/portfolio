@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 
 import React from 'react'
@@ -7,7 +7,7 @@ import React from 'react'
 const ProjectCarousel = ({data}) => {
   const [index, setIndex]=useState(0)
   const {images, title}=data.data
-
+  console.log(index)
   const next=()=>{
     setIndex((currentIndex)=>{
       const newIndex=(currentIndex+1)%images.length
@@ -20,6 +20,7 @@ const ProjectCarousel = ({data}) => {
         return newIndex
       })
   }
+ 
   return (
     <div class="max-w-screen-lg mx-auto dark:text-zinc-200">
       <div class="flex">

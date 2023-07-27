@@ -9,7 +9,7 @@ const Project = () => {
     <>
     <div className=" bg-stone-200 text-slate-800 p-4">
       <h1 className="text-5xl text-center mt-6">{state.data.title}</h1>
-      <ProjectCarousel data={state}>Project</ProjectCarousel>
+      <ProjectCarousel data={state} key={state.data.title}>Project</ProjectCarousel>
       <div className="flex w-[320px] md:w-[500px] my-4 mx-auto justify-center gap-4">
         <a className="hover:text-slate-900 hover:bg-white/30 border rounded-xl border-stone-400 p-2" target="_blank" rel="noreferrer" href={state.data.githubURL}>Github</a>
         <a className="hover:text-slate-900 hover:bg-white/30 border rounded-xl border-stone-400 p-2" target="_blank" rel="noreferrer" href={state.data.deployedURL}>Deployment</a>
