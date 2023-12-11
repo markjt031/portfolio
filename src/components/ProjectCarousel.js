@@ -4,10 +4,11 @@ import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 
 import React from 'react'
 
-const ProjectCarousel = ({data}) => {
+const ProjectCarousel = ({project}) => {
   const [index, setIndex]=useState(0)
-  const {images, title}=data.data
-  console.log(index)
+  const {images, title}=project
+ 
+
   const next=()=>{
     setIndex((currentIndex)=>{
       const newIndex=(currentIndex+1)%images.length
@@ -27,7 +28,7 @@ const ProjectCarousel = ({data}) => {
         <div id="previous" class="text-5xl flex text-slate-400 justify-center items-center cursor-pointer p-2 relative -top-8" onClick={prev}>
           <FontAwesomeIcon icon={faAngleLeft}/>
         </div>
-        <div id='carousel' class="scroll-smooth mt-4 flex w-[320px] min-h-[200px] md:w-[600px] lg:w-[800px] gap-4 pb-5 snap-x overflow-x-auto mx-auto">
+        <div id='carousel' class="scroll-smooth mt-4 flex min-w-[300px] min-h-[200px] md:w-[600px] lg:w-[800px] gap-4 pb-5 snap-x overflow-x-auto mx-auto">
           <img src={images[index]} alt={title}/>
         </div>
         <div id="next" class="text-5xl flex  text-slate-400 justify-center items-center cursor-pointer p-2 relative -top-8" onClick={next}>
