@@ -10,7 +10,6 @@ export const ContactForm = () => {
   
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current)
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);

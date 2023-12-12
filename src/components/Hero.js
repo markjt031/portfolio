@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <div className="bg-stone-200 h-[calc(100vh-200px)] w-full">
     <Anchor anchor="home"/>
-    <div className="  flex justify-center items-center">
+    <div className="  flex justify-center items-center drop-shadow-md">
       <div className="flex flex-col md:flex-row h-[calc(100vh-200px)] rounded-md justify-center items-center gap-4 bg-white/60 w-full sm:w-[60%] md:w-full mx-4">
         <div 
           style={{backgroundImage: `url(${avatar_url})`}}

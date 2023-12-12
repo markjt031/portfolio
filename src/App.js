@@ -1,13 +1,13 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./components/Home";
+import Main from "./components/Main";
 import {projects} from "./data"
 
 function App() {
   return (
     <>
       <Header data={projects}/>
-      <Home/>
+      <Main/>
       <Footer/>
     </>
   );

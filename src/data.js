@@ -1,5 +1,19 @@
 export const projects=[
     {
+        title: "Twitter Clone API",
+        technologiesIcons: [
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-plain-wordmark.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg",
+        ],
+        technologies: ["Java", "Spring", "PostgreSQL"],
+        images: [
+            "/twitterApi.png"
+        ],
+        description: "A Twitter Clone API built in a team of three developers meant to replicate functionalities of Twitter, such as liking tweets, reposting and replying to tweets. Created using Java, Spring, and PostgreSQL, the application features 30 HTTP endpoints for various crud operations on users, tweets and hashtags.",
+        
+    },
+    {
         title: "Hyrule Archives",
         technologiesIcons: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg",
@@ -104,7 +118,7 @@ export const projects=[
             "/happy-comments-3.png",
             "/happy-movies.png"
         ],
-        description: "A full stack application built in a 4-person group using MongoDB, Express, React, and Node. This application allows a user to search for movies and rate them using a unique rating scale of cat emojis.",
+        description: "Built backend server in Express for REEL Happy, a full stack application created by a 4-person group. This application allows a user to search for movies and rate them using a unique rating scale of cat emojis.",
         githubURL: "https://github.com/markjt031/ReelHappy-MERN-FrontEnd",
         deployedURL: "https://reel-happy.herokuapp.com/"
     }

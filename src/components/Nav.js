@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import {HashLink as HashLink} from 'react-router-hash-link'
+import {HashLink} from 'react-router-hash-link'
 import { projects } from '../data'
 
 const Nav = () => {

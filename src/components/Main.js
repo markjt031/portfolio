@@ -1,20 +1,15 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Home from './Home'
-import About from './About'
+import Hero from './Hero'
 import Contact from './Contact'
-import Project from './Project'
+import Projects from './Projects'
+import About from './About'
 
-
-const Main = ({data}) => {
-  return (
-    <main className="bg-stone-200">
-        <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/contact" element={<Contact/>}/>
-            <Route path="/projects/:id" element={<Project/>}/>
-        </Routes>
+const Main = () => {
+  return (<main className="bg-stone-200">
+      <Hero/>
+      <About/>
+      <Projects/>
+      <Contact/>
     </main>
   )
 }
