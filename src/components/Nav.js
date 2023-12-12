@@ -14,7 +14,7 @@ const Nav = () => {
           Jessica Marks
         </h2>
       </div>
-      <div className="block md:hidden ml-auto pr-4 my-auto cursor-pointer">
+      <div className="block sm:hidden ml-auto pr-4 my-auto cursor-pointer">
         <div id="mobile-menu-button" className={`group ${isMenuOpen ? 'open' : ''} peer`} onClick={()=>setIsMenuOpen(!isMenuOpen)}>
             <div className="top-0 bg-zinc-200 rounded-full h-1 w-8 group-open:rotate-45 group-open:top-2 relative transition-all"></div>
             <div className="opacity-100 group-open:opacity-0 bg-zinc-200 rounded-full h-1 w-8 mt-1 transition-all"></div>
@@ -44,7 +44,7 @@ const Nav = () => {
             </div>
           </div>
       </div>
-      <div className="flex-1 md:flex hidden items-center justify-end">
+      <div className="flex-1 sm:flex hidden items-center justify-end">
           <div className="menu-item">
           <span onClick={()=>{setIsMenuOpen(!isMenuOpen)}}><HashLink smooth to="#home">Home</HashLink></span>
           </div>
