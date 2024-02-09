@@ -1,9 +1,48 @@
 export const projects=[
     {
+        title: "Company Team Management App",
+        technologiesIcons: [
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+        ],
+        technologies: ["Java", "Spring", "PostgreSQL", "Angular", "Typescript", "CSS"],
+        images: [
+            "/company-team1.png",
+            "/company-team2.png",
+            "/company-team3.png",
+            "/company-team4.png",
+            "/company-team5.png",
+        ],
+        description: "A full-stack application featuring a backend built in Java Spring Boot and a frontend in Angular and Typescript. Created in a team of six with a four day deadline. Uses Spring Security and JWT for logging in with two different roles: Admin or Worker. Admins can create new teams, new projects, and add new users. ",
+        githubURL: "https://github.com/markjt031/team-project-management",
+       
+    },
+    {
+        title: "Who's Who",
+        technologiesIcons: [
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+        ],
+        technologies: ["Angular", "Typescript", "CSS"],
+        images: [
+            "/whoswho1.png",
+            "/whoswho2.png",
+            "/whoswho3.png"
+        ],
+        description: "Who's Who is a song guessing game built with Typescript and Angular. It uses Spotify's API to fetch song preview urls for playback. The game allows a user to select a genre, and whether they want to guess a song title based on a clip, or a song's artist. The game features a local leaderboard of top scores.",
+        githubURL: "https://github.com/markjt031/whos-who-game",
+        deployedURL: "https://whoswhogame.netlify.app/"
+    },
+    {
         title: "Twitter Clone API",
         technologiesIcons: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-plain-wordmark.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg",
         ],
         technologies: ["Java", "Spring", "PostgreSQL"],
@@ -11,7 +50,7 @@ export const projects=[
             "/twitterApi.png"
         ],
         description: "A Twitter Clone API built in a team of three developers meant to replicate functionalities of Twitter, such as liking tweets, reposting and replying to tweets. Created using Java, Spring, and PostgreSQL, the application features 30 HTTP endpoints for various crud operations on users, tweets and hashtags.",
-        
+        githubURL: "https://github.com/markjt031/Twitter-Clone-API"
     },
     {
         title: "Hyrule Archives",
